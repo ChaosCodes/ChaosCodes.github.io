@@ -2,15 +2,15 @@ author: Dong Yuanxin
 
 keywords: Hexo, Theme-AD
 
-description: 董沅鑫的小站
+description: Chaos_Site
 
 # 导航栏头部名称
-nav_name: GODBMW
+nav_name: Chaos
 
 # 导航栏座右铭
-motto: "安静写些东西"
+motto: "Something for blogs"
 
-github: "https://github.com/dongyuanxin/"
+github: "https://github.com/ChaosCodes/"
 
 # 站点图标和APP图标
 favicon: 
@@ -31,18 +31,18 @@ mathjax: true
 
 copyright:
   enable: true
-  author: "董沅鑫"
+  author: "曾广韬"
   show_link: true
   more: '版权声明: 本博客所有文章除特别声明外, 均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议. 转载请注明出处!'
 
 # 建站时间. 格式：YYYY-MM-DD
-start_time: "2018-02-10"
+start_time: "2018-02-27"
 
 # 如何开启 评论&统计 插件：https://godbmw.com/passages/2018-11-15-theme-bmw-docs-zh/
 # 请申请自己的 appid 和 appkey，并且替换下面的 appid 和 appkey
 leancloud:
-  appid: Hyq9wkH495DgNHWhDQCOfQSp-gzGzoHsz # 填写您的appid
-  appkey: WaR7nrzhliHj9aVwdQzkdlGd # 填写您的appkey
+  appid: 30aez2Xj5kLeavizPUYvJTxY-gzGzoHsz # 填写您的appid
+  appkey: mF5hceF2SeM6mArzNCvH2KfD # 填写您的appkey
   comment: true # 是否开启评论系统
   count: true # 是否开启文章统计
 
@@ -70,14 +70,6 @@ analytics:
     enable: false
     id: 
 
-reward:
-  -
-    src: /images/wechat.png
-    alt: "WeChat"
-  -
-    src: /images/alipay.png
-    alt: "AliPay"
-
 nav:
   -
     name: "首页"
@@ -85,55 +77,7 @@ nav:
   -
     name: "归档"
     path: "/archives/"
-  -
-    name: "标签"
-    path: "/tags/"
-  -
-    name: "分类"
-    path: "/categories/"
-  -
-    name: "友链"
-    path: "/friends/"
-  -
-    name: "关于"
-    path: "/about/"
-
 footer:
-  - 
-    title: "博客推荐"
-    children:
-      - 
-        name: "GodBMW"
-        path: "https://godbmw.com/"
-      - 
-        name: "阮一峰的个人网站"
-        path: "http://ruanyifeng.com/"
-  -
-    title: "系列教程"
-    children:
-      -
-        name: "webpack4系列教程"
-        path: "https://godbmw.com/categories/webpack4%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B/"
-      -
-        name: "设计模式手册"
-        path: "https://godbmw.com/design-patterns/"
-  -
-    title: "抓到我"
-    children: 
-      -
-        name: "掘金"
-        path: "https://juejin.im/user/5b91fcf06fb9a05d3c7fd4a5"
-      -
-        name: "思否"
-        path: "https://segmentfault.com/"
 
-footer_contact: "Email: yuanxin.me@gmail.com"
+footer_contact: "Email: kids937@foxmail.com"
 
-friends_avatar_cdn: 
-friends:
-  -
-    nickname: GodBMW
-    avatar: /images/friends/godbmw.jpeg
-    site: https://godbmw.com/
-    meta: 主题作者
-    show: true
