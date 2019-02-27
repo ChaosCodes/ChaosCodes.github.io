@@ -44,7 +44,7 @@ leancloud:
   appid: 30aez2Xj5kLeavizPUYvJTxY-gzGzoHsz # 填写您的appid
   appkey: mF5hceF2SeM6mArzNCvH2KfD # 填写您的appkey
   comment: true # 是否开启评论系统
-  count: true # 是否开启文章统计
+  count: false # 是否开启文章统计
 
 # 需要保证leancloud.comment为true
 welcome: 
@@ -70,6 +70,15 @@ analytics:
     enable: false
     id: 
 
+
+reward:
+  -
+    src: /images/wechat.png
+    alt: "WeChat"
+  -
+    src: /images/alipay.png
+    alt: "AliPay"
+
 nav:
   -
     name: "首页"
@@ -77,7 +86,13 @@ nav:
   -
     name: "归档"
     path: "/archives/"
+
 footer:
+  -
+    title: "相关推荐学习网站"
+    children: 
+      -
+        name: "couresa"
+        path: "https://www.coursera.org/"
 
-footer_contact: "Email: kids937@foxmail.com"
-
+footer_contact: "Email: kids937@foxmail.co"
