@@ -32,7 +32,7 @@ plt.plot(xs, ys, 'orange')
 plt.show()
 ```
 
-![png](note-1-for-deep-learning/output_0_0.png)
+![png](output_0_0.png)
 
 
 
