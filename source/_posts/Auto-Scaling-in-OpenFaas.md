@@ -14,7 +14,7 @@ But, before taking about auto-scaling,  let's start with the design and architec
 
 Here I present the conceptual architecture of OpenFaas. However, the orchestration provider I use is Swarm rather than Kubernetes. According to the image, my OpenFaas consists of four parts: **Gateway**, **Watchdog**, **Prometheus** and **Swarm** and I will make an introdution for them below.
 
-![faas](/Users/zengguangtao/Desktop/faas.jpeg)
+![faas](faas.jpeg)
 
 
 
@@ -22,7 +22,7 @@ Here I present the conceptual architecture of OpenFaas. However, the orchestrati
 
 Gateway provides an external route into your functions and collects Cloud Native metrics through Prometheus. **In a word, the Gateway, is just a door for user to access to the api function and provide matrics for Prometheus.**
 
-![of-conceptual-operator](/Users/zengguangtao/Desktop/of-conceptual-operator.png)
+![of-conceptual-operator](of-conceptual-operator.png)
 
  In addition, it offer *a build-in UI portal* for user to deploy function either by you own or from the Function Store. What's more, the connection between **Gateway** and **Prometheus** is the key to make auto-scaling, which means that can make auto-scaling via AlertManager and Prometheus.
 
@@ -32,7 +32,7 @@ Gateway provides an external route into your functions and collects Cloud Native
 
 According to the official document, the watchdog provides an unmanaged and generic interface between the outside world and your function. Its job is to marshal a HTTP request accepted on the API Gateway and to invoke your chosen application. The diagram below indicates how Watchdog works as a web server.
 
-![68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f4447536344626c554941416f34482d2e6a70673a6c61726765](/Users/zengguangtao/Desktop/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f4447536344626c554941416f34482d2e6a70673a6c61726765.jpeg)
+![watchdog](watchdog.jpeg)
 
 You can consider Watchdog as a entry for your fuction that is deloyed in docker.
 
@@ -42,7 +42,7 @@ You can consider Watchdog as a entry for your fuction that is deloyed in docker.
 
 [Prometheus](https://github.com/prometheus) is an open-source systems monitoring and alerting toolkit originally built at SoundCloud. In OpenFaas, Prometheus help Gateway *collect Cloud Native metrics* and *fire an alert to the API Gateway* to inform Gateway to scale.
 
-![prometheus](/Users/zengguangtao/Desktop/prometheus.png)
+![prometheus](prometheus.png)
 
 
 
@@ -50,7 +50,7 @@ You can consider Watchdog as a entry for your fuction that is deloyed in docker.
 
 A swarm is a group of machines that are running Docker and joined into a cluster. In OpenFass, swarm is used to create cluster in which you can easily to set up your docker function in a short period of time. Read [Swarm](https://docs.docker.com/engine/swarm/) for more details.
 
-![swarm](/Users/zengguangtao/Desktop/swarm.png)
+![swarm](swarm.png)
 
 
 
@@ -200,11 +200,11 @@ $ git clone https://github.com/alexellis/echo-fn \
 
 Then, you can get a function echo-fn in OpenFaas UI. 
 
-![UI](/Users/zengguangtao/Desktop/UI.png)
+![UI](UI.png)
 
 Get into the alerts UI portal in [192.168.0.12:9090/alerts](192.168.0.12:9090/alerts). However, there is no alert now.
 
-![alert](/Users/zengguangtao/Desktop/alert.png)
+![alert](alert.png)
 
 
 
@@ -221,15 +221,15 @@ done;
 
 After run the command and  `go-echo` is invoked again and again, AlertManager will find that `sum(rate(gateway_function_invocation_total{code="200"}[10s])) BY (function_name) > 5`  becomes `True`. Than it will be in **PENDING** state and continue to monitor the alert for 5s.
 
-![pending](/Users/zengguangtao/Desktop/pending.png)
+![pending](pending.png)
 
 If the alert lasts for 5s, AlertManager will switch to **FIRING** state and sent to `/system/alert ` endpoint to scale the function.
 
-![firing](/Users/zengguangtao/Desktop/firing.png)
+![firing](firing.png)
 
 After a few second, you can find the replica number wil be scaled to 5.
 
-![scale-replica](/Users/zengguangtao/Desktop/scale-replica.png)
+![scale-replica](scale-replica.png)
 
 When you stop the command, Gateway will figure out that some replica get to be idle and kill them. After that, the replica number will down back to 1.
 
