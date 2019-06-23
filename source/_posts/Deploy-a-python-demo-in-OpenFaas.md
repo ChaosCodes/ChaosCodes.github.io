@@ -8,7 +8,7 @@ tags: OpenFaas
 
 > After a try in OpenFaas, here I make a effort to deploy my own function via OpenFaas. 
 
-A few days ago, I play Chinese string up puzzle in QQ with a robot named xiaobing. An interesting thought came to mind that whether I could write such a function service which can help me figure the next idiom in the puzzle. So I get to write my python function.
+A few days ago, I played Chinese string up puzzle in QQ with a robot named xiaobing. An interesting thought came to mind that whether I could write such a function service which can help me figure the next idiom in the puzzle. So I got to write my python function about the game.
 
 
 
@@ -32,7 +32,7 @@ with open('idioms_dict.json','w') as f:
 
 Then you could find that the pre-processed data. You can find the idoim with its first character.
 
-#####idioms_dict.json
+##### idioms_dict.json
 
 ````json
 {
