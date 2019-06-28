@@ -42,7 +42,7 @@ In OpenFaas, the Gateway has been exposed a lot of metrics to help you monitor t
 
 # Application Scenarios of OpenFaas
 
-![image-20190623135255806](/Users/zengguangtao/Library/Application Support/typora-user-images/image-20190623135255806.png)
+![aso](aso.png)
 
 We can find the scenarios in the silde of [Alex Ellis's talk](https://www.youtube.com/watch?v=C3agSKv2s_w)
 
@@ -82,7 +82,7 @@ We can find the scenarios in the silde of [Alex Ellis's talk](https://www.youtub
 
 ## In Conclusion
 
-Although OpenFaas is an immature framework, but I can be powerful in cloud and distributed system, which is the trend of future.
+Although OpenFaas is an immature framework yet, but it can be powerful in cloud and distributed system, which is the trend of future.
 
 ##### Preference
 
