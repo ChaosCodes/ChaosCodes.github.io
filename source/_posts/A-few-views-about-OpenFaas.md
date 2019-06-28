@@ -86,7 +86,7 @@ Although OpenFaas is an immature framework, but I can be powerful in cloud and d
 
 ##### Preference
 
-2. [Serverless Faas Current Status and Future]([http://jolestar.com/serverless-faas-current-status-and-future/](http://jolestar.com/serverless-faas-current-status-and-future/)) 
+1. [Serverless Faas Current Status and Future]([http://jolestar.com/serverless-faas-current-status-and-future/](http://jolestar.com/serverless-faas-current-status-and-future/)) 
 2. [How Openfaas Came to Rescue Us](https://medium.com/iconscout/how-openfaas-came-to-rescue-us-ec129518cd46)
 3. [Why IoT and Serverless Fit So Well!](https://read.iopipe.com/why-iot-and-serverless-fit-so-well-9fc9b9e94de9)
 4. [Serverless and Chatbots: Made for Each Other](https://dzone.com/articles/serverless-and-chatbots-made-for-each-other)
